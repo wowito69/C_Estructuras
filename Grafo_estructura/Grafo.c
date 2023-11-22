@@ -32,8 +32,8 @@ int main() {
                 scanf("%d", &filas);
                 columnas = filas;
 
-                //asignamos memoria dinamicamente a nuestro puntero de punteros de el tamaño filas por el tamaño de punteros a enteros
-                //el puntero grafo_insertado apunta a el puntero filas que apunta a cada columna
+                //asignamos memoria dinamicamente a nuestro puntero de punteros del tamaño filas por el tamaño de punteros a enteros
+                //el puntero grafo_insertado apunta al puntero filas que apunta a cada columna
                 grafo_insertado = malloc(filas * sizeof(int *));
                 for (int i = 0; i < filas; i++) {
                     //ahora cada fila le asignamos memoria para que almacene tantos datos enteros como sea indicado
