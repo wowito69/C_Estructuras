@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Definición de la estructura del nodo
+
 struct Nodo {
     //campo dato
     int dato;
@@ -33,7 +33,7 @@ struct Nodo* insertar(struct Nodo* raiz, int dato) {
     return raiz;
 }
 
-// Función para realizar un recorrido en orden (in-order) del árbol
+// Función para realizar un recorrido en orden 
 void inOrder(struct Nodo* raiz) {
     if (raiz != NULL) {
         inOrder(raiz->izquierda);
@@ -42,12 +42,12 @@ void inOrder(struct Nodo* raiz) {
     }
 }
 
-// Función principal
+
 int main() {
     // Crear una raíz vacía
     struct Nodo* raiz = NULL;
 
-    // Insertar elementos en el árbol
+
     raiz = insertar(raiz, 50);
     raiz = insertar(raiz, 30);
     raiz = insertar(raiz, 20);
@@ -56,13 +56,13 @@ int main() {
     raiz = insertar(raiz, 60);
     raiz = insertar(raiz, 80);
 
-    // Realizar un recorrido in-order e imprimir los nodos
+    // Realizar un recorrido  en orden
     printf("Recorrido In-Order: ");
     inOrder(raiz);
 
-    // Liberar la memoria al finalizar el programa
-    // En una implementación completa, podrías tener funciones para liberar la memoria
-    // asociada con los nodos del árbol.
+
+
+
 
     return 0;
 }
